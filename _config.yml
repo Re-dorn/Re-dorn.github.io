@@ -105,3 +105,8 @@ deploy:
   type: git
   repo: https://github.com/Re-dorn/Re-dorn.github.io.git
   branch: gh-pages
+
+# katex config
+markdown:
+  plugins:
+    - "@traptitech/markdown-it-katex"

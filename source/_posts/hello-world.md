@@ -1,7 +1,17 @@
 ---
 title: Hello World
+math: true
 ---
 Welcome to [Hexo](https://hexo.io/)! This is your very first post. Check [documentation](https://hexo.io/docs/) for more info. If you get any problems when using Hexo, you can find the answer in [troubleshooting](https://hexo.io/docs/troubleshooting.html) or you can ask me on [GitHub](https://github.com/hexojs/hexo/issues).
+
+## Math Test
+
+$$
+\begin{align*}
+& \stackrel{\textbf{\_}}{C} = Filter[\stackrel{\sim}{C}^{(i)}]\\
+& C^{(i)} = \alpha\stackrel{\textbf{\_}}{C}^{(i)}+(1-\alpha)C^{(i-1)}\\
+\end{align*}
+$$
 
 ## Quick Start
 
