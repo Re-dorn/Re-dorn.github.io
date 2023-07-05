@@ -28,7 +28,7 @@
 <meta property="og:image" content="https://s2.loli.net/2023/07/05/xIiXGHpJ6BVA1Ug.png">
 <meta property="og:image" content="https://s2.loli.net/2023/07/05/DmKyHl2G9fQzeck.png">
 <meta property="article:published_time" content="2023-06-26T11:42:55.277Z">
-<meta property="article:modified_time" content="2023-07-05T12:26:38.114Z">
+<meta property="article:modified_time" content="2023-07-05T12:34:15.106Z">
 <meta property="article:author" content="Redorn">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://s2.loli.net/2023/07/05/z8cpYBqnIMt1hRZ.gif">
@@ -237,7 +237,7 @@
         
         
         
-          21 分钟
+          41 分钟
         
       </span>
     
@@ -285,6 +285,14 @@
             <!-- SEO header -->
             <h1 style="display: none">建站</h1>
             
+              <p class="note note-info">
+                
+                  
+                    本文最后更新于：2023年7月5日 晚上
+                  
+                
+              </p>
+            
             
               <div class="markdown-body">
                 
@@ -331,9 +339,9 @@
 <li>私密性（还是Github）</li>
 </ol>
 <p>先花了很长时间研究Github做图床的可行性，毕竟都白嫖Github Pages了，能整个配套当然好。但即使抛开图片仓库会被完全公开的隐私问题不谈，Github做图床的另一个问题是更致命的——国内访问。</p>
-<p>网上大多数建站/建图床教程还在吹jsDelivr有多好，但很遗憾它已经在22年4月被彻底墙掉了。搜集资料的时候看到一些有趣的，有人自己搭了个<a target="_blank" rel="noopener" href="https://www.codeqihan.com/post/zi-zhi-de-yi-ge-jsdelivr-jing-xiang-fen-xiang/">镜像</a>做慈善，有人一边<a target="_blank" rel="noopener" href="https://blog.orangii.cn/2022/jsdelivr-alt/">分享备选站点</a>一边痛骂拿jsD当图床的（我不懂这方面，不知道他骂得有没有道理）。</p>
-<p>但不管怎么说，免费好使的CDN是没有了。虽然看到了有人提出拿Cloudflare Works+自定域名<a target="_blank" rel="noopener" href="https://senjianlu.com/2021/12/cloudflare-workers-image/">给Github私有仓库做反代</a>，但这个不够白嫖，本着能不花钱就不花钱的原则，我选择继续琢磨。出于同样的原因阿里云等OSS也不考虑。</p>
-<p>期间看到了个把白嫖精神发挥到极致的替代方案——<a target="_blank" rel="noopener" href="https://github.com/cf-pages/Telegraph-Image">蹭Telegraph的图床</a>。虽然我没采用，但这个思路真的很好玩。</p>
+<p>网上大多数建站/建图床教程还在吹jsDelivr有多好，但很遗憾它已经在22年4月被彻底墙掉了。搜集资料的时候倒看到一些趣事，有人自己搭了个<a target="_blank" rel="noopener" href="https://www.codeqihan.com/post/zi-zhi-de-yi-ge-jsdelivr-jing-xiang-fen-xiang/">镜像</a>做慈善，有人一边分享备选站点一边<a target="_blank" rel="noopener" href="https://blog.orangii.cn/2022/jsdelivr-alt/">痛骂拿jsD当图床</a>的（我不懂这方面，不知道他骂得有没有道理）。</p>
+<p>但不管怎么说，免费好使的CDN是没有了。虽然有人提出拿Cloudflare Works+自定域名<a target="_blank" rel="noopener" href="https://senjianlu.com/2021/12/cloudflare-workers-image/">给Github私有仓库做反代</a>，但这个不够白嫖，本着能不花钱就不花钱的原则，我选择继续琢磨。出于同样的原因阿里云等OSS也不考虑。</p>
+<p>期间看到个把白嫖精神发挥到极致的替代方案——<a target="_blank" rel="noopener" href="https://github.com/cf-pages/Telegraph-Image">蹭Telegraph的图床</a>。虽然我没采用，但这个思路真的很幽默。</p>
 <p>最终我使用了<a target="_blank" rel="noopener" href="https://sm.ms/">sm.ms</a>图床，主要看重它给了个国内可用的替代域名<a target="_blank" rel="noopener" href="https://smms.app/home/invoice">smms.app</a>，这个真的很难得，而且它也足够稳定，十几年的老图床了。免费额度是200张/天，1000张/月，5MB/张，免费空间5G。倒是完全够我用，以后真有更大需求再说。</p>
 <h2 id="Typora图片自动上传">Typora图片自动上传</h2>
 <p>图床选好了就可以整自动上传了！Typora官方推荐的图片上传API是<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo">PicGo</a>。按<a target="_blank" rel="noopener" href="https://molunerfinn.com/typora-supports-picgo/">官方教程</a>一步步配置即可，这部分没什么难点。</p>
@@ -363,6 +371,7 @@
 <p>虽说也不是不能用，但是这种废弃项目的不稳定性太高了，况且冷静下来想一想，塞个能网页写作的后端好像也没什么用——你要是用电脑，那干嘛不直接整个typora写呢？要是手机，在网页上写markdown还不如记事本呢。</p>
 <p>遂放弃。</p>
 <hr>
+<p>总结：用轮子之前<strong>一定要</strong>先看看还有没有维护。</p>
 <p>截止2023.7.5在建站上折腾的东西就这么些，后面还折腾的话再更新。</p>
 
                 
@@ -397,6 +406,11 @@
           <div>2023年6月26日</div>
         </div>
       
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2023年7月5日</div>
+        </div>
       
       
         <div class="license-meta-item">
